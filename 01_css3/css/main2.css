@@ -1,0 +1,14 @@
+@charset "utf-8";
+.bl{
+    color: blue;
+}
+.us{
+    color: red;
+}
+div{
+    width: 1250px;
+    border: 1px solid #000;
+}
+ul li{
+    list-style: none;
+}
