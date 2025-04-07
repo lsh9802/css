@@ -1,4 +1,7 @@
 @charset "utf-8";
+body{
+    font-family: "맑은 고딕", "malgun gothic", "sans-serif";
+}
 .bl{
     color: blue;
 }
@@ -6,7 +9,7 @@
     color: red;
 }
 div{
-    width: 1250px;
+    width: 800px;
     border: 1px solid #000;
 }
 ul li{
