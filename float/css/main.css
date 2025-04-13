@@ -1,0 +1,88 @@
+@charset "utf-8";
+body{
+    font-family: "맑은고딕","malgun gothic",sans-serif;
+    background: #ffffff;
+}
+*{margin: 0;padding: 0;}
+
+h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.wrap{
+    width: 230px;
+    border: 1px solid #B4B4B4;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+.box{
+    width: 230px;
+}
+div .h1{
+    width: 230px;
+    height: 50px;
+    background: #C9EDFF;
+    color: #000;
+    text-align: center;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: 900;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+div .h2{
+    width: 230px;
+    height: 23px;
+    background: #FACFD6;
+    color: #000;
+    text-align: center;
+    line-height: 23px;
+    font-size: 15px;
+    font-weight: 900;
+    border-radius: 5px;
+    margin-bottom: 7px;
+}
+div .h3{
+    width: 138px;
+    height: 122px;
+    background: #EDFFA8;
+    text-align: center;
+    line-height: 122px;
+    font-size: 15px;
+    font-weight: 900;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+div .h4{
+    width: 138px;
+    height: 110px;
+    background: #DED1ED;
+    text-align: center;
+    line-height: 110px;
+    font-size: 15px;
+    font-weight: 900;
+    border-radius: 5px;
+}
+div .h5{
+    width: 80px;
+    height: 242px;
+    background: #FFF2B5;
+    text-align: center;
+    line-height: 242px;
+    font-size: 15px;
+    font-weight: 900;
+    border-radius: 5px;
+    float: right;
+}
+.h6{
+    width: 230px;
+    height: 50px;
+    background: #baffd6;
+    font-size: 15px;
+    font-weight: 900;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 10px;
+}
