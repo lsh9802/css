@@ -50,6 +50,7 @@ a{
 .header .inner .gnb li a{
     color: #444444;
     font-size: 17px;
+    font-weight: 400    ;
 }
 .header .inner .gnb .last{
     margin-right: 0;
