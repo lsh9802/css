@@ -1,0 +1,117 @@
+@charset "utf-8";
+.header{
+    width: 1000px;
+    height: 1000px;
+    background: lightblue;
+    position: relative;
+    margin: auto;
+}
+.box1{
+    width: 200px;
+    height:200px;
+    background: blue;
+    left: 0;
+    top: 0;
+    position: static;
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    background: green;
+    left: 100px;
+    top: 100px;
+    position: absolute;
+}
+.box3{
+    width: 200px;
+    height: 200px;
+    background: red;
+    left: 200px;
+    top: 200px;
+    position: absolute;
+}
+.box4{
+    width: 200px;
+    height: 200px;
+    background: black;
+    left: 50%;
+    margin-left: -100px;
+    top: 50%;
+    margin-top: -100px;
+    position: absolute;
+}
+.box5{
+    width: 200px;
+    height: 200px;
+    background: red;
+    right: 200px;
+    top: 200px;
+    position: absolute;
+    z-index: 3;
+}
+.box6{
+    width: 200px;
+    height: 200px;
+    background: green;
+    right: 100px;
+    top: 100px;
+    position: absolute;
+    z-index: 2;
+}
+.box7{
+    width: 200px;
+    height:200px;
+    background: blue;
+    right: 0;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+}
+.box8{
+    width: 200px;
+    height:200px;
+    background: blue;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+.box9{
+    width: 200px;
+    height: 200px;
+    background: green;
+    left: 100px;
+    bottom: 100px;
+    position: absolute;
+}
+.box10{
+    width: 200px;
+    height: 200px;
+    background: red;
+    left: 200px;
+    bottom: 200px;
+    position: absolute;
+}
+.box11{
+    width: 200px;
+    height:200px;
+    background: blue;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+.box12{
+    width: 200px;
+    height: 200px;
+    background: green;
+    right: 100px;
+    bottom: 100px;
+    position: absolute;
+}
+.box13{
+    width: 200px;
+    height: 200px;
+    background: red;
+    right: 200px;
+    bottom: 200px;
+    position: absolute;
+}
