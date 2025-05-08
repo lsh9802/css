@@ -1,0 +1,286 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: "Noto Sans", sans-serif;
+}
+
+/* 여백초기화 */
+*{margin: 0;padding: 0;}
+a{text-decoration: none;}
+button{cursor: pointer;border:none;background: none;}
+li{list-style: none;}
+img{border:none;display: block;}
+
+/* header 영역 */
+.header{
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    border-bottom: 1px solid #d9d9d9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 18px;
+    box-sizing: border-box;
+}
+.header h1 a{
+    display:block;
+    width: 150px;
+    height: 40px;
+    background: url(../images/logo.png) no-repeat;
+    background-size: 150px 40px;
+    text-indent: -99999px;
+}
+.header .menu{
+    width: 22px;
+    height: 20px;
+    background: url(../images/ico-menu.png) no-repeat;
+    background-size: 22px 20px;
+    text-indent: -99999px;
+}
+.header .search{
+    width: 21.5px;
+    height: 21px;
+    background: url(../images/ico-search.png) no-repeat;
+    background-size: 21.5px 21px;
+    text-indent: -99999px;
+}
+.edu{
+    width: 100%;
+    height: 55px;
+    /* padding: 0 80px; */
+    background: #fff;
+    border-bottom: 1px solid #d9d9d9;
+}
+.edu .gnb{
+    display:block;
+    width: 100%;
+    line-height: 55px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap:19px;
+}
+.edu .gnb li a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #344a56;
+}
+.edu .gnb li:hover a{
+    color: #ed174d;
+}
+/* 메인화면 */
+.main{
+    width: 100%;
+}
+/* visual화면 */
+.main .visual{
+    width: 100%;
+}
+.main .visual img{
+    width: 100%;
+}
+/* section1 */
+.main .section1{
+    padding: 40px 0;
+    background: #fff;
+}
+.main .section1 h2{
+    font-size: 21px;
+    color: #000;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.main .section1 ul{
+    width: 380px;
+    margin: auto;
+    background: #fff;
+    display:flex;
+}
+.main .section1 ul li{
+    width: 50%;
+    height: 135px;
+    text-align: center;
+}
+.main .section1 ul li:first-child a{
+    background: url(../images/ico-45-tv.png) no-repeat center 25px;
+    background-size: 45px;
+}
+.main .section1 ul li:nth-child(2) a{
+    background: url(../images/ico-45-internet.png) no-repeat center 25px;
+    background-size: 45px;
+}
+.main .section1 ul li:nth-child(3) a{
+    background: url(../images/ico-45-rental.png) no-repeat center 25px;
+    background-size: 45px;
+}
+.main .section1 ul li:last-child a{
+    background: url(../images/ico-45-combination.png) no-repeat center 25px;
+    background-size: 45px;
+}
+.main .section1 ul li a{
+    display:block;
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+    box-sizing: border-box;
+    /* border:1px solid red; */
+}
+.main .section1 ul li a p{
+    font-size:14px;
+    font-weight: 500;
+    color:#000;
+}
+/* section2 */
+.main .section2{
+    padding: 56px;
+    background: #f2f3f7;
+}
+.main .section2 h2{
+    font-size: 25px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+}
+.main .section2 h3{
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+}
+.main .section2 img{
+    width: 100%;
+    margin-top: 45px;
+}
+/* section3 */
+.main .section3{
+    padding: 60px;
+    background: #ed174d;
+}
+.main .section3 h2{
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+input{
+    width: 320px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 25px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: url(../images/ico-search-lg-white.png) no-repeat right 10px;
+    background-size: 27.5px 27px;
+}
+input::placeholder{
+    color: #fff;
+    font-size: 20px;
+}
+/* footer */
+.footer{
+    width: 100%;
+}
+.footer .section4{
+    display: block;
+    width: 100%;
+    height: 68px;
+    background: #000;
+    display: flex;
+    align-items: center;
+}
+.footer .section4 ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer .section4 ul li a{
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 20px;
+    color: #8fa1a3;
+}
+.footer .section4 ul li{
+    position: relative;
+}
+.footer .section4 ul li:first-child::after{
+    display: none;
+}
+.footer .section4 ul li::after{
+    content: "";
+    width: 1px;
+    height: 14px;
+    background: #8fa1a3;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -5px;
+}
+.footer .section5 ul{
+    display: block;
+    width: 100%;
+    height: 68px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .section5 ul li a{
+    font-size: 15px;
+    font-weight: 500;
+    color: #8fa1a3;
+}
+/* section6 */
+.section6 ul{
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #333436;
+    background: #1e1f21;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section6 ul li a{
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 20px;
+    color: #fff;
+}
+.footer .section6 ul li{
+    position: relative;
+}
+.footer .section6 ul li::after{
+    content: "";
+    width: 1px;
+    height: 10px;
+    background: #4a4b4d;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -5px;
+}
+/* copy */
+.footer .copy{
+    width: 100%;
+    height: 344px;
+    padding: 20px;
+    background: #4a4b4d;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    text-align: center;
+}
+.copy h1 a{
+    display: block;
+    width: 120px;
+    height: 35px;
+    /* margin-top: 20px; */
+    background: url(../images/logo-cjhello.png) no-repeat;
+    background-size: 120px 35px;
+    text-indent: -99999px;  
+}
+/* .footer .copy ul li a{
+
+} */
