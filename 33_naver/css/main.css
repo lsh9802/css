@@ -1,0 +1,61 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'NanumSquareRound',sans-serif;
+}
+/* 초기화 작업 */
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+
+.section{
+    width: 100%;
+    padding: 80px;
+}
+.section .inner{
+    width: 1200px;
+    /* background: gold; */
+    margin: auto;
+}
+.section .inner h2{
+    font-size: 38px;
+    color: #0a2b4a;
+    font-weight: 900;
+    margin-bottom: 80px;
+}
+.section .inner ul{
+    display: flex;
+    gap:24px 
+}
+.section .inner ul li{
+    width: 384px;
+    transition: all 0.5s ease-in-out;
+    /* background: pink; */
+}
+.section .inner ul li a{
+    display: block;
+    width: 100%;
+}
+.section .inner ul li a .imgbox{
+    width: 100%;
+    height: 217px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.section .inner ul li a .imgbox img{
+    width: 100%;
+}
+.section .inner ul li a h3{
+    font-size: 20px;
+    color: #47395a;
+    font-weight: 700;
+    margin-top: 28px;
+}
+.section .inner ul li:hover{
+    transform: translateY(-10px);
+}
