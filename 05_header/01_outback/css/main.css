@@ -99,6 +99,10 @@ a{
     width: 86px;
 }
 
+.header .inner .gnb>.last>.depth2>li{
+    text-align: center;
+}
+
 .header .inner .gnb>.last{
     margin-right: 0;
 }
