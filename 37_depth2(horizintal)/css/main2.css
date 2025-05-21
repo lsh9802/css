@@ -1,0 +1,130 @@
+@charset "utf-8";
+@font-face {
+font-family: 'NanumBarunGothic';
+font-style: normal;
+font-weight: 400;
+src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'NanumBarunGothic';
+font-style: normal;
+font-weight: 700;
+src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+
+@font-face {
+font-family: 'NanumBarunGothic';
+font-style: normal;
+font-weight: 300;
+src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+body{
+    font-family: 'NanumBarunGothic', sans-serif;
+}
+/* 초기화 작업 */
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+
+.header{
+    width: 100%;
+    height: 115px;
+    border-bottom: 1px solid #e1e1e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header h1{
+
+}
+.header h1 a{
+    display: block;
+    width: 278px;
+    height: 20px;
+    background: url(../images/logo.jpg) no-repeat;
+    text-indent: -99999px;
+}
+.inner{
+    width: 1360px;
+    height: 60px;
+    background: #fff;
+    margin: auto;
+}
+.inner .gnb{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    justify-content: center;
+    gap: 70px;
+}
+.inner .gnb>li>a{
+    font-size: 16px;
+    color: #111;
+    letter-spacing: -1px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 60px;
+}
+.inner .gnb>li:hover>a{
+    color: #b8a37f;
+}
+/* 2단메뉴 디자인 */
+.inner .gnb>li>.depth2{
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 170px;
+    z-index: 999;
+    display: none
+}
+.inner .gnb>li:hover .depth2{
+    display: block;
+}
+.inner .gnb>li>.depth2 ul{
+    width: 1360px;
+    height: 60px;
+    background: #FDFCF8;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 63px;
+}
+.inner .gnb>li>.depth2 ul li a{
+    font-size: 15px;
+    font-weight: 500;
+    color: #767772;
+}
+.inner .gnb>li>.depth2 ul li:hover a{
+    color: #000;
+}
+.inner .gnb>li>.depth2 .ceo{
+    margin-left: 233px;
+}
+.inner .gnb>li>.depth2 .beauty{
+    margin-left: 475px;
+}
+.inner .gnb>li>.depth2 .faq{
+    margin-left: 550px;
+}
+.inner .gnb>li>.depth2 .com{
+    margin-left: 320px;
+}
+.inner .gnb>li>.depth2 .insa{
+    margin-left: 630px;
+}
+
+.main{
+    width: 100%;
+}
+.main .visual{
+    width: 1360px;
+    margin: auto;
+}
