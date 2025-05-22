@@ -101,7 +101,6 @@ a{text-decoration: none;}
     letter-spacing: -1px;
 }
 .inner .gnb>li>.depth2 li:hover a{
-    font-weight: 500;
     color: #000;
 }
 .inner .gnb>li>.depth2 .intro{
