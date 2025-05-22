@@ -1,0 +1,45 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕","malgun gothic",sans-serif;
+}
+*{margin: 0;padding: 0;}
+.round1, .round2{
+    width: 711px;
+    height: 112px;
+    border: 1px solid #010101;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 30px 30px 0;
+}
+.round1{
+    margin-top: 38px;
+    border-radius: 8px 24px 8px 24px;
+}
+.round2{
+    box-shadow: 0 0 6px gray;
+    border-radius: 8px;
+}
+.box1, .box2{
+    width: 711px;
+    height: 142px;
+    border: 1px solid #010101;
+    margin: auto;
+    margin-bottom: 50px;
+    text-align: center;
+    line-height: 142px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.box1{
+    background: #F2F2F2;
+    text-shadow: 3px 3px red;
+}
+.box2{
+    background: #000;
+    color: #000;
+    text-shadow: 0 0 10px #fff;
+
+}
+.box2 h1 .txt{
+    text-shadow: 3px 3px #fff;
+}
