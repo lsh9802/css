@@ -95,6 +95,7 @@ ul.tabbar{
     bottom: 0;
     background: #fff;
     padding: 0 16px;
+    box-sizing: border-box;
 }
 ul.tabbar a{
     color: #c8c8c8;
