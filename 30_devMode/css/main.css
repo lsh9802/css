@@ -86,7 +86,7 @@ a{text-decoration: none;}
 /* 상품목록 */
 .new ul.list{
     display: flex;
-    gap: 16px;
+    gap: 12px;
     flex-wrap: wrap;
     margin-bottom: 65px;
 }
