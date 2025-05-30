@@ -1,0 +1,77 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕","malgun gothic",sans-serif;
+}
+
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+
+:root{
+    /* 변수선언(컬러등록) */
+    --bgc:#D3EDFA;
+    --bk:#000;
+    --whit:#fff;
+    --red:#EA4C4D;
+    --fontc:#485564;
+    --bordc:#C5CED5;
+    /* 숫자변수 */
+    --fsize:16px;
+    --paddt:37px;
+    --paddl:30px;
+    --padd:67px;
+    --bord:16px;
+    --bord4:4px;
+}
+
+ul{
+    width: 100%;
+    background: var(--bgc);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+ul li{
+    width: 320px;
+    border: 1px solid var(--bordc);
+    border-radius: var(--bord);
+    overflow: hidden;
+    position: relative;
+}
+ul li .imgbox{
+    width: 100%;
+    height: 240px;
+}
+ul li .imgbox img{
+    width: 100%;
+    height: 100%;
+}
+ul li .coupon{
+    width: 132px;
+    height: 35px;
+    background: var(--red);
+    color: var(--whit);
+    font-size: var(--fsize);
+    position: absolute;
+    border-radius: var(--bord4);
+    left: 20px;
+    top: 50%;
+    text-align: center;
+    line-height: 35px;
+}
+ul li .text{
+    width: 320px;
+    height: 200px;
+    background: var(--whit);
+    padding-top: var(--paddt);
+    padding-left: var(--paddl);
+    box-sizing: border-box;
+}
+ul li .text h2{
+    color: var(--bk);
+    margin-bottom: 23px;
+}
+ul li .text p{
+    font-size: 20px;
+    color: var(--fontc);
+}
