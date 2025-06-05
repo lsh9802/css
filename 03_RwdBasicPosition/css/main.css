@@ -1,0 +1,70 @@
+@charset "utf-8";
+body{
+
+}
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+
+.wrap{
+    width: 100%;
+    position: relative;
+}
+.wrap .red{
+    width: 100%;
+    height: 300px;
+    background: red;
+}
+.wrap .blue{
+    width: 100px;
+    height: 300px;
+    background: blue;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.wrap .green{
+    width: 100px;
+    height: 300px;
+    background: green;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* 노트북일때 (992px ~ 1199px) */
+@media ( min-width:992px) and ( max-width:1199px ){
+    .wrap .green{
+        position: static;
+        width: 100%;
+    }
+}
+/* 테블릿일때 (768px ~ 991px) */
+@media ( min-width:768px ) and ( max-width:991px ){
+    .wrap .red{
+        height: 600px;
+    }
+    .wrap .blue{
+        position: static;
+        width: 100%;
+    }
+    .wrap .green{
+        position: static;
+        width: 100%;
+    }
+}
+/* 모바일일때 (320px ~ 767px) */
+@media ( min-width:320px ) and  (max-width:767px){
+    .wrap .red{
+        height: 600px;
+    }
+    .wrap .blue{
+        position: static;
+        width: 100%;
+        height: 600px;
+    }
+    .wrap .green{
+        position: static;
+        width: 100%;
+        height: 600px;
+    }
+}
