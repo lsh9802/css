@@ -1,0 +1,79 @@
+@charset "utf-8";
+body{
+
+}
+*{margin: 0;padding: 0;box-sizing: border-box;}
+/* flaot명령으로 반응형 */
+/* pc기기일때 1280px이상*/
+.wrap{
+    width: 1000px;
+    margin: auto;
+}
+.wrap .red{
+    width: 100%;
+    height: 150px;
+    background: red;
+}
+
+.wrap .bg_wrap .blue{
+    width: 50%;
+    height: 120px;
+    background: blue;
+    float: left;
+}
+
+.wrap .bg_wrap .green{
+    width: 50%;
+    height: 120px;
+    background: green;
+    float: left;
+}
+
+
+/* 노트북기기일때 991px ~ 1199px까지 */
+@media ( min-width:991px ) and ( max-width:1199px ){
+    /* pc기준으로 노트북 시안하고 변경된 부분만 코딩한다 */
+    .wrap{
+        width: 100%;
+
+    }
+    body{
+        padding: 0 20px;
+    }
+}
+
+
+
+/* tablet기기일때 768px ~ 990px까지*/
+/* media Query를 활용하여 반응형을 구현한다 */
+@media ( min-width:768px ) and ( max-width:990px ){
+    /* pc기준으로 바뀐부분만 코딩한다 */
+    .wrap{
+        width: 100%;
+    }
+    .wrap .bg_wrap .blue{
+        height: 240px;
+    }
+    .wrap .bg_wrap .green{
+        height: 240px;
+    }
+}
+/* mobole기기일때 320px ~ 767px까지*/
+@media ( min-width:320px ) and ( max-width:767px ){
+    .wrap{
+        width: 100%;
+    }
+    .wrap .red{
+        height: 300px;
+    }
+    .wrap .bg_wrap .blue{
+        /* 아래로 쌓이기 위헤 float을 해제한다 */
+        float: none;
+        width: 100%;
+    }
+    .wrap .bg_wrap .green{
+        float: none;
+        width: 100%;
+    }
+}
+
