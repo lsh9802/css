@@ -140,7 +140,6 @@ li{list-style: none;}
     .wrap main aside{
         width: 100%;
         display: flex;
-        justify-content: space-evenly;
         gap: 27px;
     }
 }
