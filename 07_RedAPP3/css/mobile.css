@@ -1,0 +1,29 @@
+@media ( min-width:320px ) and ( max-width:767px ){
+    header{
+        height: 70px;
+    }
+    header .inner{
+        width: 100%;
+        height: 70px;
+    }
+    header .inner nav,
+    header .inner .sns{
+        display: none;
+    }
+    header .inner h1{
+    left: 0;
+    top: 0%;
+    padding-left: 15px;
+    }
+    header .inner h1 a img{
+    width: 117px;
+    height: 41px;
+    }
+    /* px기기에서 숨겼던 메뉴버트을 보이게함 */
+    .m_btn{
+        display: block;
+        font-size: 14px;
+        color: #383838;
+        padding-right: 20px;
+    }
+}
