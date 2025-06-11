@@ -1,0 +1,288 @@
+header{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #777;
+}
+header .inner{
+    width: 1200px;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+/* 모바일 버튼이 pc기기에서는 숨김 */
+.m_btn{
+    display: none;
+}
+header .inner h1{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+header .inner h1 a{
+    font-size: 28px;
+    color: #333;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+header .inner nav{
+    width: 100%;
+    text-align: center;
+}
+header .inner nav .gnb{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap:85px
+}
+header .inner nav .gnb li a{
+    font-size: 16px;
+    color: #333;
+}
+header .inner .sns{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+header .inner .sns a{
+    margin-left: 6px;
+    color: #333;
+    font-size: 16px;
+} 
+/* main visual 이미지 영역*/
+main{
+    width: 100%;
+}
+main .visual{
+    width: 100%;
+    height: 800px;
+    background: url(../images/visual.jpg) no-repeat center;
+    position: relative;
+}
+main .visual .title{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+main .visual .title h2{
+    font-size: 56px;
+    color: #fff;
+    font-weight: 900;
+    margin-bottom: 25px;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+    /* 영어단어를 모두 대문자로 */
+    text-transform: uppercase;
+}
+main .visual .title p{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+    text-align: center;
+    line-height: 36px;
+    /* 영어단어 첫글자를 대문자로 */
+    text-transform: capitalize;
+}
+main figure.first{
+    padding: 100px 0;
+    text-align: center;
+}
+main figure.first p{
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 42px;
+    color: #666;
+}
+/* work 영역 */
+.work{
+    width: 100%;
+    padding: 90px 0 50px;
+    background: #efefef;
+}
+.work .inner{
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+.work .inner h2,
+.news .inner h2
+{
+    font-size: 36px;
+    text-transform: capitalize;
+}
+.work .inner p,
+.news .inner p{
+    font-size: 16px;
+    margin: 16px 0 50px;
+    color: #666;
+    text-transform: capitalize;
+}
+.work .inner ul.list,
+.news .inner ul.list
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.work .inner ul.list li,
+.news .inner ul.list li
+{
+    width: 30%;
+    /* background: pink; */
+}
+.work .inner ul.list li a,
+.news .inner ul.list li a
+{
+    display: block;
+    width: 100%;
+}
+.work .inner ul.list li a img,
+.news .inner ul.list li a img
+{
+    width: 100%;
+}
+.skill{
+    width: 100%;
+    padding: 100px 0;
+}
+.skill .inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+.skill .inner ul.list{
+    /* 3개씩 아래로 내리기 */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.skill .inner ul.list li{
+    width: 380px;
+    text-align: center;
+    padding-top: 110px;
+}
+.skill .inner ul.list li a{
+    display: block;
+    width: 100%;
+}
+.skill .inner ul.list li:first-child{
+    background: url(../images/ico_code.png) no-repeat center 30px;
+    background-size: 50px;
+}
+.skill .inner ul.list li:nth-child(2){
+    background: url(../images/ico_option.png) no-repeat center 30px;
+    background-size: 50px;
+}
+.skill .inner ul.list li:nth-child(3){
+    background: url(../images/ico_setting.png) no-repeat center 30px;
+    background-size: 50px;
+}
+.skill .inner ul.list li:nth-child(4){
+    background: url(../images/ico_support.png) no-repeat center 30px;
+    background-size: 50px;
+}
+.skill .inner ul.list li:nth-child(5){
+    background: url(../images/ico_tools.png) no-repeat center 30px;
+    background-size: 50px;
+}
+.skill .inner ul.list li:last-child{
+    background: url(../images/ico_transper.png) no-repeat center 30px;
+    background-size: 50px;
+}
+.skill .inner ul.list li a h3{
+    color: #6dc8fd;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.skill .inner ul.list li a p{
+    color: #666;
+    line-height: 20px;
+}
+
+main figure.second{
+    width: 100%;
+    height: 400px;
+    background: url(../images/search01.png) no-repeat center top;
+    position: relative;
+}
+main figure.second p{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+/* 메인영역에 news */
+main .news{
+    width: 100%;
+    padding: 90px 0 50px;
+}
+main .news .inner{
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+main .news .inner ul.list{
+    display: flex;
+}
+main .news .inner ul.list li a .imgbox{
+    width: 100%;
+}
+main .news .inner ul.list li a .txt{
+    text-align: right;
+    margin-top: 20px;
+}
+main .news .inner ul.list li a .txt h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: #666;
+}
+main .news .inner ul.list li a .txt p{
+    margin: 12px 0;
+}
+/* 메인영역안에 */
+main .today{
+    width: 100%;
+    height: 240px;
+    background: #f2f2f2;
+    text-align: center;
+}
+main .today p{
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 80px;
+}
+main .today .btn_today{
+    width: 150px;
+    height: 40px;
+    background: #333;
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+footer{
+    width: 100%;
+    height: 56px;
+    background: #555;
+}
+footer p{
+    /* 카피라이트 폰트사이즈는 12px고정 */
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+footer p span{
+    color: #6dc8fd;
+}

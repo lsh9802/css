@@ -1,0 +1,117 @@
+@media ( min-width:320px ) and ( max-width:767px ){
+    header{
+        height: 50px;
+    }
+    header .inner{
+        width: 100%;
+        height: 50px;
+    }
+    header .inner nav,
+    header .inner .sns{
+        display: none;
+    }
+        header .inner h1{
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    /* px기기에서 숨겼던 메뉴버트을 보이게함 */
+    .m_btn{
+        display: block;
+        font-size: 18px;
+        color: #333;
+        padding-left: 16px;
+    }
+    main .visual{
+        height: 420px;
+    }
+    main .visual .title h2{
+        font-size: 36px;
+    }
+    main .visual .title p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    main figure.first{
+        padding: 30px 0;
+    }
+    main figure.first p{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    /* 메인 */
+    main .work{
+        padding: 42px 20px 35px;
+    }
+    main .work .inner{
+        width: 100%;
+    }
+    main .work .inner h2,
+    main .news .inner h2
+    {
+        font-size: 24px;
+    }
+    main .work .inner p,
+    main .news .inner p
+    {
+        font-size: 14px;
+    }
+    main .work .inner ul.list{
+        /* 이미지를 아래방향으로 향하게 */
+        flex-direction: column;
+    }
+    main .work .inner ul.list li{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    main .work .inner ul.list li:last-child{
+        margin-bottom: 0;
+    }
+
+    /* 메인에 skill영역 */
+    /* 모바일은 아래로 1개씩 */
+    .skill{
+        padding: 0 20px;
+    }
+    .skill .inner{
+        width: 100%;
+    }
+    .skill .inner ul.list li{
+        width: 100%;
+    }
+    .skill .inner ul.list li a p{
+        text-align: justify;
+    }
+
+    /* 메인영역에 이미지설명2 */
+    main figure.second{
+        height: 150px;
+        background-size: cover;
+        margin-top: 100px;
+    }
+    main figure.second p{
+        font-size: 10px;
+    }
+
+
+    /* 메인안에 news영역 */
+    main .news{
+        margin-top: 100px;
+        padding: 0 20px;
+    }
+    main .news .inner{
+        width: 100%;
+    }
+    .news .inner ul.list{
+        flex-direction: column;
+    }
+    .news .inner ul.list li{
+        width: 100%;
+    }
+
+    main .today p{
+        font-size: 16px;
+    }
+
+
+}
