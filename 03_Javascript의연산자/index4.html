@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트연산자(논리연산자)</title>
+</head>
+<body>
+    <!-- 
+        논리 연산자(and,or,not)
+        1. 개발자에게 결과를 true,false 만 return
+        2. 논리곱(and) && -> 두가지 조건이 모두 참이어야 참이되는 연산자
+        3. 논리합(or) || -> 두가지 조건 중 하나라도 참이면 참이 되는 연산자
+        4. 반대(not) ! -> 참일때 -> 거짓, 거짓일때 참이 되는 연산자
+
+    -->
+    <script>
+        let bool1 = true;
+        let bool2 = false;
+
+        // 논리연산자 not
+        document.write("bool1의변수값=" + bool1 + "<br>")
+        document.write("bool1의변수값=" + !bool1 + "<br>")
+        document.write("bool1의변수값=" + bool2 + "<br>")
+        document.write("bool1의변수값=" + !bool2 + "<br>")
+        
+        // 논리연산자 and
+        let bool3 = bool1 && bool2
+        document.write("bool3의변수값=" + bool3 + "<br>")
+        
+        
+        // 논리연산자 or
+        let bool4 = bool1||bool2
+        document.write("bool4의변수값=" + bool4 + "<br>")
+
+    </script>
+    
+</body>
+</html>
