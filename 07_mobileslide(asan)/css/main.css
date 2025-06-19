@@ -1,0 +1,83 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+body{
+    font-family: "Noto Sans KR", sans-serif;
+}
+/* 초기화 작업 */
+*{margin: 0;padding: 0;}
+button{border: none;background: none;cursor: pointer;}
+a{text-decoration: none;}
+
+/* header박스 */
+.header{
+    width: 100%;
+    height: 45px;
+    background: #33363f;
+    /* header박스가 기준이다 */
+    position: relative;
+}
+.header h1{
+    position: absolute;
+    left: 50%;
+    margin-left: -45px;
+    top: 50%;
+    margin-top: -22.5px;
+}
+.header h1 a{
+    /* inline태그요소는 크기설정은 안댐 */
+    display: block;
+    width: 90px;
+    height: 45px;
+    background: url(../images/img_header_logo.png) no-repeat;
+    background-size: 90px 45px;
+    text-indent: -99999px;
+}
+.header .m_menu{
+    display: block;
+    width: 45px;
+    height: 45px;
+    background: url(../images/bg_header_lnb.png) no-repeat;
+    background-size: 45px 45px;
+    text-indent: -99999px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.header .m_search{
+    width: 45px;
+    height: 45px;
+    background: url(../images/img_topSerch.png) no-repeat;
+    background-size: 45px 45px;
+    text-indent: -99999px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.main{
+    width: 100%;
+}
+/* 모바일에서 슬라이드가 들어가는 이미지는 무조건 가로사이즈 100% */
+.main .swiper img{
+    width: 100%;
+}
+/* prev,next 버튼 변경(customizing) */
+.main .swiper .swiper-button-prev,
+.main .swiper .swiper-button-next
+{
+    color: #fff;
+    opacity: 0.5;
+}
+/* 페이지버튼 부노 */
+.main .swiper .swiper-pagination{
+}
+/* 각각의 페이지 버튼 요소 */
+.main .swiper .swiper-pagination .swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    opacity: 1;
+}
+/* 활성화된 페이지 버튼 요소 */
+.main .swiper .swiper-pagination .swiper-pagination-bullet-active{
+    background: #fff;
+}
