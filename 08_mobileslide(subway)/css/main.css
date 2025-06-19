@@ -67,7 +67,9 @@ button{
 .main{
     width: 100%;
 }
-
+.main img{
+    width: 100%;
+}
 .main .swiper{
     width: 100%;
 }
@@ -75,7 +77,7 @@ button{
 /* 페이지번호 */
 
 .main .swiper .swiper-pagination{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 48px;
     height: 22px;
     background-color: rgba(0,0,0,0.3);
