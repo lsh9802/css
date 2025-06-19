@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문응용2</title>
+</head>
+<body>
+    <!-- 
+    태어난년도 1900-2025 태어난월 1-12 테어날일 1-31
+    -->
+    <span>태어난월</span>
+    <select name="" id="">
+        <option value="">1월</option>
+        <option value="">2월</option>
+        <option value="">3월</option>
+        <option value="">4월</option>
+        <option value="">5월</option>
+        <option value="">6월</option>
+        <option value="">7월</option>
+        <option value="">8월</option>
+        <option value="">9월</option>
+        <option value="">10월</option>
+        <option value="">11월</option>
+        <option value="">12월</option>
+    </select>
+
+    <span>태어난일</span>
+    <!-- 1-31까지 목록상자로 값을 대입 -->
+
+    <script>
+        let day = "<select>";
+        for(let i=1;i<=31;i++){
+                day = day + "<option>" + i +"일</option>"
+        }
+        day = day + "</select>" 
+        // alert(day)
+        document.write(day)
+
+    </script>
+
+    <script>
+        let since = "<select>";
+        for(let k=2025;k>=1900;k--){
+            since = since + "<option>" + k + "년도</option>"
+        }
+        since = since + "</select>"
+        document.write(since)
+    </script>
+
+</body>
+</html>
