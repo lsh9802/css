@@ -3,24 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>객체반복문응용</title>
+    <title>객체반복문배열</title>
 </head>
 <body>
     <script>
-        let book = {
+        let book = ["소년이운다","13,600원","한강","2024뇬12월12일","216페이지"]
+        document.write("책제목:" + book[0] + "<br>")
+        document.write("가격:" + book[1] + "<br>")
+        document.write("저자:" + book[2] + "<br>")
+        document.write("출간일:" + book[3] + "<br>")
+        document.write("페이지수:" + book[4] + "<br>");
+    
+        document.write("<hr>");
+        let book2= {
             name:"소년이운다",
             price:"13,600원",
             writer:"한강",
-            day:"2024년12월12일",
+            day:"2024뇬12월12일",
             page:"216페이지"
         }
-        console.log(book);
 
-        document.write("책제목:" + book.name + "<br>")
-        document.write("가격:" + book.price + "<br>")
-        document.write("저자:" + book.writer + "<br>")
-        document.write("출간일:" + book.day + "<br>")
-        document.write("페이지수:" + book.page + "<br>")
+        document.write("책제목:" + book2.name + "<br>")
+        document.write("가격:" + book2.price + "<br>")
+        document.write("저자:" + book2.writer + "<br>")
+        document.write("출간일:" + book2.day + "<br>")
+        document.write("페이지수:" + book2.page + "<br>")
 
         
 
