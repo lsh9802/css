@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체응용</title>
+</head>
+<body>
+    <script>
+        // 응용문제
+        // 학원시간펴 객체 만들기
+        // schdule
+        // 월요일,화요일,수요일,목요일,금요일
+        // 1교시 html 2교시 css
+        // 화요일
+        // 1교시 javascript 2교시 jquery
+        // 수요일
+        // 1교시 작품집 2교시 포트폴리오
+
+        let schdule ={
+            "monday":{
+                day:"월요일",
+                class1:"1교시:html",
+                class2:"2교시:css"
+            },
+            "tuesday":{
+                day:"화요일",
+                class1:"1교시:javascript",
+                class2:"2교시:jquery"
+            },
+            "wednesday":{
+                day:"수요일",
+                class1:"1교시:작품집",
+                class2:"2교시:포트폴리오"
+            }
+        }
+
+        document.write("<h3>월요일</h3>" + "<br>")
+        document.write(schdule.monday.class1 + "<br>")
+        document.write(schdule.monday.class2 + "<br>")
+
+        document.write("<h3>화요일</h3>" + "<br>")
+        document.write(schdule.tuesday.class1 + "<br>")
+        document.write(schdule.tuesday.class2 + "<br>")
+
+        document.write("<h3>수요일</h3>" + "<br>")
+        document.write(schdule.wednesday.class1 + "<br>")
+        document.write(schdule.wednesday.class2 + "<br>")
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트객체</title>
+</head>
+<body>
+    <!-- 
+        객체(object) -> 어떤것에 대한 정보들을 모아놓은 저장공간
+        예> 강아지 객체
+        이름,나이,색깔,족보 이런 정보를 하나로 모아둔게 객채
+    -->
+    <script>
+
+        let dog = {
+            name:"초코",
+            age:3,
+            color:"갈색"
+        }
+        // 객체 data를 접근해서 출력
+        document.write("<hr>");
+        document.write(dog.name + "<br>");
+        document.write(dog.age + "<br>");
+        document.write(dog.color + "<br>");
+        document.write(dog + "<br>");
+        document.write("<hr>");
+        console.log(dog);
+        let dog2 = ["초코",3,"갈색"];
+
+        // data를 접근해서 출력
+        document.write(dog2[0] + "<br>");
+        document.write(dog2[1] + "<br>");
+        document.write(dog2[2] + "<br>");
+        document.write(dog2 + "<br>");
+    </script>
+
+    <!-- 
+    객체 -> key(index) 와 값(value) 쌍으로 정보를 담는다
+            1. 객체이름.key이름 으로 저장된 data를 꺼낼수 있다
+            2. 객체이름["key"]
+    -->
+    <!-- 학교친구객체 -->
+    <script>
+        let friend = {
+            name:"홍길동",
+            age:20,
+            hobby:"운동",
+            favorite:"수학"
+        };
+
+        console.log(friend);
+
+        document.write("<hr>");
+        document.write(friend.name + "<br>")
+        document.write(friend["name"] + "<br>")
+
+        // 학교 객체 만들기
+        
+        let school = {
+            name:"케이디초등학교",
+            location:{
+                city:"서울",
+                street:"종로구 123"
+            },
+            grade:16
+        }
+        
+        //  학교정보객체안에 주소정보객체가 들어갈수 있음
+
+        document.write("<hr>");
+        document.write(school.name + "<br>");
+        document.write(school.location.city + "<br>");
+        document.write(school.location.street + "<br>");
+
+        // 동물원에 동물 객체
+        // []표기법으로 접근
+
+        let zoo = {
+            "lion":{
+                name:"킹",
+                age:5,
+                charater:"갈기가 멋져요"
+            },
+            "gire":{
+                name:"길쭉이",
+                age:3,
+                charater:"목이 길어요"
+            },
+            "panda":{
+                name:"통통이",
+                age:4,
+                charater:"대나무를 좋아해"
+            }
+
+        }
+
+        document.write("<hr>")
+        document.write(zoo["lion"]["name"] + "<br>")
+        document.write(zoo.lion.name + "<br>")
+
+        
+
+
+
+
+    </script>
+</body>
+</html>
