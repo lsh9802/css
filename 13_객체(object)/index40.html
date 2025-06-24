@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체반복문응용2</title>
+</head>
+<body>
+    <script>
+        let book = {
+            "책제목":"소년이운다",
+            "가격":"13,600원",
+            "저자":"한강",
+            "출간일":"2024년12월12일",
+            "페이지수":"216페이지"
+        }
+
+        document.write("책제목:" + book.책제목 + "<br>")
+        document.write("가격:" + book.가격 + "<br>")
+        document.write("저자:" + book.저자 + "<br>")
+        document.write("출간일:" + book.출간일 + "<br>")
+        document.write("페이지수:" + book.페이지수 + "<br>")
+
+        document.write("<hr>");
+        for(let key in book){
+            document.write(key + ":" + book[key] + "<br>")
+        }
+
+    </script>
+</body>
+</html>
