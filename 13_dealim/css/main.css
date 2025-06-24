@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+body{
+    font-family: "Noto Sans KR", sans-serif;
+}
+*{margin: 0;padding: 0;}
+
+li{
+    list-style: none;
+    text-decoration: none;
+}
+.header_wrap{
+    width: 100%;
+    height: 320px;
+    /* height: 70px; */
+    background: #fff;
+    border-bottom: 1px solid #002C5D;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+.header{
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #d0d0d0;
+}
+.header .inner{
+    width: 1200px;
+    height: 70px;
+    margin: auto;
+}
+.header .inner h1{
+    float: left;
+    margin-right: 68px;
+    line-height: 70px;
+}
+.header .inner .gnb{
+    float: left;
+}
+.header .inner .gnb>li{
+    float: left;
+    line-height: 70px;
+    position: relative;
+}
+.header .inner .gnb>li>a{
+    color: #575757;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+}
+.header .inner .gnb>li{
+    margin-left: 63px;
+}
+.header .inner .gnb>.first{
+    margin-left: 0;
+}
+.header .inner .icon{
+    float: right;
+}
+.header .inner .icon li{
+    float: left;
+    margin-right: 21px;
+    line-height: 70px;
+}
+.header .inner .icon .first{
+    margin-left: 0;
+    margin-top: 3px;
+}
+
+/* 2단메뉴 */
+.header .inner .gnb>li>.depth2{
+    width: 140px;
+    height: 250px;
+    position: absolute;
+    left: -20px;
+    top: 71px;
+    border-left: 1px solid #f1f1f1;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    background: #fff;
+    display: none;
+}
+.header .inner .gnb>li>.depth2>li{
+    line-height: 33px;
+}
+.header .inner .gnb>li>.depth2>li>a{
+    font-size: 14px;
+    color: #727272;
+    letter-spacing: -0.8px;
+}
+.header .inner .gnb>li>.depth2>li:hover a{
+    color: #5a2b96;
+}
+
+.visual{
+    width: 100%;
+    height: 920px;
+    background: url("../images/dealim.jpg") no-repeat center top;
+}
+.header .inner .gnb li a:hover{
+    color: #000398;
+}
