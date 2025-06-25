@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수</title>
+</head>
+<body>
+    <script>
+
+    let amount = 3650000;
+    // let year = 1;
+    // let rate = 4;
+
+    // 함수가 이자액을 계산하는 함수
+    function interrastcal(amount,year,rate){
+        let sum = amount * year * rate/100
+        return sum;
+    }
+    document.write(`맡긴 금액은 ${amount}원 입니다<br>`)
+    document.write(`이자는 ${interrastcal(3650000,1,4)}원 입니다<br>`)
+    document.write(`최종받을 금액은 ${amount + interrastcal(3650000,1,4)}원 입니다<br>`)
+
+
+</script>
+</body>
+</html>
