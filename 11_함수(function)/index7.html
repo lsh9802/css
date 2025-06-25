@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수매개변수응용문제</title>
+</head>
+<body>
+    <!-- 
+    1.여기는 서울입니다 5번출력
+    여기는 부산입니다 4번출력
+    여기는 제주입니다 3번출력
+    -->
+    <script>
+        // for(let i=1;i<=5;i++){
+        //     document.write("여기는 서울입니다<br>")
+        // }
+        // for(let i=1;i<=4;i++){
+        //     document.write("여기는 부산입니다<br>")
+        // }
+        // for(let i=1;i<=3;i++){
+        //     document.write("여기는 제주입니다<br>")
+        // }
+
+        // 함수를 사용
+        // document.write("<hr>")
+        // function dosi1(){
+        //     document.write("서울")
+        // }
+        // for(let i=1;i<=5;i++){
+        //     document.write(`여기는 ${dosi1} 입니다<br>`)
+        // }
+
+        // 
+        function city(dosi){
+            for(let i=1;i<=5;i++){
+                document.write(`여기는 ${dosi} 입니다<br>`)
+            }
+        }
+        city("서울")
+        function city2(dosi){
+            for(let i=1;i<=4;i++){
+                document.write(`여기는 ${dosi} 입니다<br>`)
+            }
+        }
+        city2("부산")
+        function city3(dosi){
+            for(let i=1;i<=3;i++){
+                document.write(`여기는 ${dosi} 입니다<br>`)
+            }
+        }
+        city3("제주")
+
+    </script>
+</body>
+</html>
