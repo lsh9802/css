@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수return문응용</title>
+</head>
+<body>
+    <script>
+
+        // 두수를 더하는 프로그램
+        // 외부로 부터 데이터를 두개 입력받아서 더한 결과를 되돌려 받는 프로그램을 작성하시오
+        // body에 출력
+        // 출력결과는 
+        // 3 + 5 = 8
+        // 11 + 34 = 45
+
+
+        let left = prompt("좌변의 데이터를 입력해주세요")
+        let right = prompt("우변의 데이터를 입력해주세요")
+
+        function sum(num1,num2){
+            return Number(num1) + Number(num2)
+        }
+
+        document.write(`${left} + ${right} = ${sum(left,right)}`)
+
+
+
+
+    </script>
+</body>
+</html>

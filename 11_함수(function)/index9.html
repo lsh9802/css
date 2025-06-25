@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수return문</title>
+</head>
+<body>
+    <!-- 
+    return문 ->
+    함수를 호출하여 일을 시키고 나서 결과를 다시 나한테(함수호출한사람한테)
+    되돌려주는것
+    예) 계산기한테 3+5 계산해줘 계산기는 8이라는 결과를 되돌려줘
+    return
+
+    1. return 되돌려줄값이 없을때-> 결과값을 되돌려줄때
+    2. return문 -> 함수실행이 중간에서 종료시킬때
+    -->
+
+    <script>
+        // 함수를 선언
+        function add(a,b){
+            return a+b;
+        }
+
+        // 함수를 실행
+        document.write(add(3,5) + "<br>")
+
+        // 제곱근을 구하는 계산기 프로그램
+        // 데이타는 외부에서 받아 출력하는 프로그램
+
+        let num = prompt("제곱승을 구할 숫자를 입력하세요")
+
+    //      제곱근을 구하는 프로그램
+        function squre(no){
+            // return no * no
+            let res = no * no;
+            return res;
+        }
+
+        document.write(squre(num) + "<br>")
+
+        // 두수를 더하는 프로그램
+        // 외부로 부터 데이터를 두개 입력받아서 더한 결과를 되돌려 받는 프로그램을 작성하시오
+        // body에 출력
+        // 출력결과는 
+        // 3 + 5 = 8
+        // 11 + 34 = 45
+
+    </script>
+</body>
+</html>
