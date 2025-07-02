@@ -171,6 +171,6 @@ li{list-style: none;}
 .section .inner .right .wrap .menu li.on a{
     color: #000;
 }
-.section .inner .right .wrap .menu li:hover a{
+/* .section .inner .right .wrap .menu li:hover a{
     color: #000;
-}
+} */
