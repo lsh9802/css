@@ -8,6 +8,7 @@ header .inner{
     height: 70px;
     margin: 0 auto;
     position: relative;
+    z-index: 900;
     /* display: flex;
     justify-content: space-between;
     align-items: center; */
@@ -78,7 +79,7 @@ header .inner .cart{
         background: #F57421 url(../images/sub_cur.png) no-repeat center top;
         padding: 28px 0;
         box-sizing: border-box;
-        z-index: 999;
+        /* z-index: 999; */
         display: none;
     }
     header .inner ul.gnb>li>.depth2>li{
