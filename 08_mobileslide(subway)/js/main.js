@@ -45,6 +45,9 @@ autoplay:{
     $(".m_gnb>ul>li>a").removeClass("on")
     $(this).toggleClass("on")
     $(this).next().slideToggle().parent().siblings().find(".depth2").slideUp();
+
+    $(this).parent().siblings().find("a.on").removeClass('on');
+    $(this).toggleClass("on")
   })
 
   //햄버거 버튼을 클릭하면 m_side_wrap 을 left -100% 에서 left 0
