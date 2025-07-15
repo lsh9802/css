@@ -1,0 +1,44 @@
+@media ( min-width:320px ) and ( max-width:767px ){
+    header{
+        height: 50px;
+        padding: 0 15px;
+    }
+    header .inner{
+        width: 100%;
+        height: 50px;
+    }
+    header .inner h1{
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    header .inner ul.gnb{
+        display: none;
+    }
+
+    /* 모바일메뉴 숨긴 처리 보이게 */
+    .m_btn{
+        /* 숨긴처리 보이게 하기 */
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../images/m_menu.png) no-repeat;
+    background-size: 24px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-indent: -99999px;
+}
+
+/* 메인 이미지 */
+main .visual img{
+    width: 100%;
+}
+main p .show{
+    display: block;
+}
+main p .hidden{
+    display: none;
+}
+}   
