@@ -1,10 +1,10 @@
 $(function () {
     $(".gnb>li").mouseenter(function () {
-        $(this).find(".depth2").stop().fadeIn(1000)
+        $(this).find(".depth2").stop().fadeIn(300)
     })
 
     $(".gnb>li").mouseleave(function () {
-        $(this).find(".depth2").stop().fadeOut(1000)
+        $(this).find(".depth2").stop().fadeOut(300)
     });
 
     // swiper 슬라이드
