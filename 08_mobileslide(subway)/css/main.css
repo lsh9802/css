@@ -222,19 +222,17 @@ li{list-style: none;}
     position: relative;
 }
 .m_gnb>ul>li>a::after{
-    content:'';
+    content: '';
     width: 10px;
     height: 10px;
-    border:2px solid #000;
-    background: gold;
+    border: 2px solid #bbbbbb;
     border-top: none;
     border-left: none;
-    transform: rotate(45deg);
     position: absolute;
-    right: 25px;
-    top: 50%;
+    right: 20px;
+    top: 40%;
     transform: translateY(-50%);
-    transition: all 0.5s ease-in-out;
+    transform: rotate(45deg);
 }
 .m_gnb>ul>li>a.on::after{
     content:'';
@@ -242,6 +240,7 @@ li{list-style: none;}
     border-top:none;
     border-left:none;
     transform: rotate(225deg);
+    transition: all 0.5s ease-in-out;
 }
 .m_gnb>ul>li>a>img{
     width: 26px;
