@@ -156,9 +156,7 @@ if(num <= 767){
     // 아코디언 메뉴 구현
     $(function(){
         $(".m_menu_wrap ul.m_gnb>li>a").click(function(){
-            $(this).next().slideToggle().parent().siblings().find(".depth2").sideup();
-
-        })
-
+            $(this).next().slideToggle().parent().siblings().find(".depth2").slideUp();
+    })
 
     })
