@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+main{
+    width: 100%;
+}
+.sub_visual{
+    width: 100%;
+    height: 370px;
+    background: url("../images/sub_top_visual_menu.jpg") no-repeat center top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub_visual h2{
+    font-size:54px;
+    color:#fff
+}
+main .content{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0 120px;
+}
+main .content ul.list{
+    width: 100px;
+}
+main .content ul.list li{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+main .content ul.list li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #696969;
+    font-weight: bold;
+}
+main .content ul.list li.on a{
+    background: #2b2b2b;
+    color: #fff;
+}
+/* 오른쪽 newbest박스 */
+main .content .newbest{
+    width: 850px;
+}
+main .content .newbest .tit_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border-bottom: 2px solid #4b4b4b;
+}
+main .content .newbest .tit_wrap h2{
+    font-size: 30px;
+    color: #323232;
+    font-weight: 700;
+}
+main .content .newbest .tit_wrap .location{
+    font-size: 12px;
+    color: #949494;
+}
+main .content .newbest .tit_wrap .location a{
+    color: #949494;
+}
+main .content .newbest .new_menu{
+    width: 100%;
+    margin: 35px 0;
+    display: flex;
+}
+main .content .newbest .new_menu li{
+    width: 50%;
+    height: 40px;
+}
+main .content .newbest .new_menu li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #efefef;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+main .content .newbest .new_menu li:first-child a{
+    background: #692D91;
+    color: #fff;
+}
+/* select 박스 */
+main .content .newbest .select_box{
+    width: 100%;
+    padding: 15px 20px;
+    background: #f7f7f7;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .content .newbest .select_box p{
+    font-size: 13px;
+    color: #333;
+    font-weight: bold;
+}
+main .content .newbest .select_box .select_wrap{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+main .content .newbest .select_box .select_wrap select{
+    width: 275px;
+    height: 35px;
+    border: 1px solid #e2e2e2;
+    outline: none;
+    text-indent: 15px;
+}
+main .content .newbest .select_box .select_wrap .btn_move{
+    width: 50px;
+    height: 35px;
+    background: #323232;
+    color: #fff;
+    font-weight: bold;
+}
+main .content .newbest .newmenu{
+    width: 100%;
+    padding: 25px;
+    background: #f7f7f7;
+}
+main .content .newbest .newmenu h3{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+main .content .newbest .newmenu p{
+    font-size: 12px;
+    color: #949494;
+}
